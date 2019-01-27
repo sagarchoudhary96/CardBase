@@ -1,0 +1,13 @@
+use_frameworks!
+
+target 'Blockstack_Example' do
+  pod 'Blockstack', :path => '../'
+end
+
+target 'Blockstack_Tests' do
+  inherit! :search_paths
+
+  pod 'Blockstack', :path => '../'
+  pod 'Quick'
+  pod 'Nimble'
+end
